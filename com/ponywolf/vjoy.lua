@@ -7,7 +7,7 @@
 local M = {}
 local stage = display.getCurrentStage()
 
-function M.newButton(radius, key)
+function M.newButton(key, radius)
 
   local instance
   radius = radius or 64
