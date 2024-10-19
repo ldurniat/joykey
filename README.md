@@ -36,7 +36,7 @@ The first axis of the two for your joystick (defaults to 1)
 Size of the joystick control (defaults to 48px) or a filename of an image to load for the joystick forground
 
 ###### outerRadius
-Size of the joystick movement area (defaults to 496px) or a filename of an image to load for the joystick background
+Size of the joystick movement area (defaults to 96px) or a filename of an image to load for the joystick background
 
 Add a virtual button
 ```
