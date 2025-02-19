@@ -113,11 +113,11 @@ function M.newStick(startAxis, innerRadius, outerRadius)
     instance.axisY = self.y / stopRadius
     local axisEvent
     if not (self.y == (self._y or 0)) then
-      axisEvent = {name = "axis", axis = { number = startAxis }, normalizedValue = instance.axisX }
+      axisEvent = {name = "joystick_axis", axis = { number = startAxis }, normalizedValue = instance.axisX }
       Runtime:dispatchEvent(axisEvent)
     end
     if not (self.x == (self._x or 0))  then 
-      axisEvent = {name = "axis", axis = { number = startAxis+1 }, normalizedValue = instance.axisY }
+      axisEvent = {name = "joystick_axis", axis = { number = startAxis+1 }, normalizedValue = instance.axisY }
       Runtime:dispatchEvent(axisEvent)
     end
     self._x, self._y = self.x, self.y

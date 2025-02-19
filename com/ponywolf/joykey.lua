@@ -85,7 +85,7 @@ local function axis(event)
 end
 
 function M.start()
-  Runtime:addEventListener("axis", axis)
+  Runtime:addEventListener("joystick_axis", axis)
 end
 
 return M
