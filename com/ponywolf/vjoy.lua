@@ -133,7 +133,7 @@ function M.newStick(startAxis, innerRadius, outerRadius)
   function instance:deactivate()
     stage:setFocus(nil, joystick.eventID)
     joystick.x, joystick.y = outerArea.x, outerArea.y
-    self:removeEventListener("touch", self.joystick )
+    self:removeEventListener("touch", joystick )
     self.axisX = 0
     self.axisY = 0
   end
